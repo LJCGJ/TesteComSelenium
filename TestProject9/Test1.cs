@@ -45,7 +45,6 @@ namespace ProjetoTesteFacebook
 
             IWebElement errorMessage = wait.Until(ExpectedConditions.ElementIsVisible(By.ClassName("_9ay7")));
 
-            // A CHAMADA COMPLETA "NUnit.Framework.Assert.IsTrue" EVITA O ERRO CS0117
             NUnit.Framework.Assert.IsTrue(errorMessage.Text.Contains("A senha que você inseriu está incorreta") || errorMessage.Text.Contains("O email que você inseriu não está conectado a uma conta"), "A mensagem de erro do login não apareceu como esperado.");
             Console.WriteLine("Teste de login inválido passou! Mensagem de erro exibida corretamente.");
         }
