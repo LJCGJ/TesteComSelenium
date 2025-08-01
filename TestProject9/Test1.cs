@@ -27,7 +27,7 @@ namespace ProjetoTesteFacebook
             }
             catch (WebDriverTimeoutException)
             {
-                Console.WriteLine("Pop-up de cookies não encontrado ou já aceito.");
+                Console.WriteLine("Pop-up de cookies não encontrado ou já aceito."); //
             }
         }
 
